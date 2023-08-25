@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{774D0343-8D53-4C0A-AB8D-13227BE97798}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinalProject</RootNamespace>
+    <AssemblyName>FinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MessageBoxManager">
+      <HintPath>..\messageboxmanager\MessageBoxManager\bin\Release\MessageBoxManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.Desktop.UI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=9683591576b7f0b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Siticone.Desktop.UI.2.1.1\lib\net40\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddingNewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddingNewProduct.Designer.cs">
+      <DependentUpon>AddingNewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_SidePanel_AdminPrivacySettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_SidePanel_AdminPrivacySettings.Designer.cs">
+      <DependentUpon>Admin_SidePanel_AdminPrivacySettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_SidePanel_Charts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_SidePanel_Charts.Designer.cs">
+      <DependentUpon>Admin_SidePanel_Charts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_SidePanel_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_SidePanel_Home.Designer.cs">
+      <DependentUpon>Admin_SidePanel_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProduct.Designer.cs">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RoundEdgesTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoundEdgesTextBox.Designer.cs">
+      <DependentUpon>RoundEdgesTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardUserPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardUserPage.Designer.cs">
+      <DependentUpon>StandardUserPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStock.Designer.cs">
+      <DependentUpon>UpdateStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users_FinalProjectDataSet.cs">
+      <DependentUpon>users_FinalProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="users_FinalProjectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>users_FinalProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddingNewProduct.resx">
+      <DependentUpon>AddingNewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_SidePanel_AdminPrivacySettings.resx">
+      <DependentUpon>Admin_SidePanel_AdminPrivacySettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_SidePanel_Charts.resx">
+      <DependentUpon>Admin_SidePanel_Charts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_SidePanel_Home.resx">
+      <DependentUpon>Admin_SidePanel_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProduct.resx">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardUserPage.resx">
+      <DependentUpon>StandardUserPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStock.resx">
+      <DependentUpon>UpdateStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="ProductsDataSet.xsc">
+      <DependentUpon>ProductsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProductsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductsDataSet.xss">
+      <DependentUpon>ProductsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="users_FinalProjectDataSet.xsc">
+      <DependentUpon>users_FinalProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="users_FinalProjectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>users_FinalProjectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="users_FinalProjectDataSet.xss">
+      <DependentUpon>users_FinalProjectDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="panel1IMG.jpg" />
+    <None Include="Resources\logout.png" />
+    <None Include="logout.png" />
+    <None Include="Resources\admin_double_left_arrow2forward.bmp" />
+    <None Include="add_stocks_button.png" />
+    <None Include="edit_stock_button.png" />
+    <None Include="delete_stock_button.png" />
+    <None Include="minus-stock.png" />
+    <Content Include="Products.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="submit_button.png" />
+    <None Include="reduce_stock_button.png" />
+    <None Include="update_stock_button.png" />
+    <Content Include="users_FinalProject.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
+</Project>
